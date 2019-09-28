@@ -17,7 +17,15 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      "business-calendar": [
+        "dist/business-calendar"
+      ],
+      "business-calendar/*": [
+        "dist/business-calendar/*"
+      ]
+    }
   },
   "angularCompilerOptions": {
     "fullTemplateTypeCheck": true,
