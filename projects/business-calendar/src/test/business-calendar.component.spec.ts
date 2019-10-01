@@ -1,6 +1,5 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-
-import { BusinessCalendarComponent } from './business-calendar.component';
+import {BusinessCalendarComponent} from '../lib/business-calendar.component';
 
 describe('BusinessCalendarComponent', () => {
   let component: BusinessCalendarComponent;
