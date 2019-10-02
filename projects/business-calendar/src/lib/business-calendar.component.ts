@@ -5,6 +5,7 @@ import { Component, OnInit } from '@angular/core';
   template: `
     <p>
       business-calendar works!
+        <am-period-chooser></am-period-chooser>
     </p>
   `,
   styles: []
