@@ -9,7 +9,7 @@ describe('FileUploadService', () => {
     expect(service).toBeTruthy();
   });
 
-  it('should file be read', () => {
+  it('should read the file content', () => {
     const service: FileUploadService = TestBed.get(FileUploadService);
     const fileContent = 'test';
     const fakeFile = new File([fileContent], 'filename', {type: 'text/csv'});
