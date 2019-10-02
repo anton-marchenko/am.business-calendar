@@ -10,8 +10,7 @@
       "prefix": "am",
       "schematics": {
         "@schematics/angular:component": {
-          "styleext": "scss",
-          "changeDetection": "OnPush"
+          "styleext": "scss"
         }
       },
       "architect": {
