@@ -1,1 +1,4 @@
-<p>period-chooser works!</p>
+<div class="chooser-box">
+    <button [ngClass]="{ 'primary': isYearMode() }" class="button" (click)="onSwitchYear()">Year</button>
+    <button [ngClass]="{ 'primary': !isYearMode() }" class="button" (click)="onSwitchMonth()">Month</button>
+</div>
