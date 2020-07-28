@@ -1,0 +1,16 @@
+<div class="calendar" [ngClass]="isCompactMode ? 'calendar_compact-mode' : 'calendar_full-mode'">
+    <div *ngIf="isCompactMode" class="calendar__month-title">{{ monthName }}</div>
+    <div class="calendar__header">
+      <div class="calendar__day-of-week" *ngFor="let month of monthNamesList" [ngClass]="{ holiday: month.isHoliday }">
+        {{ month.name }}
+      </div>
+    </div>
+    <div class="calendar__week" *ngFor="let week of monthData">
+      <am-day-item
+        [isCompactMode]="isCompactMode"
+        *ngFor="let day of week"
+        [day]="day"
+      ></am-day-item>
+    </div>
+  </div>
+  

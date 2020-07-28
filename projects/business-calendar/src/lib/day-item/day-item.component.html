@@ -1,0 +1,13 @@
+<div
+  class="calendar__day"
+  [ngClass]="{
+    'calendar__day_full-mode': !isCompactMode,
+    calendar__day_disable: !day.isCurrMonth,
+    calendar__day_work: isWorkDay(),
+    calendar__day_short: isShortDay(),
+    calendar__day_holiday: isHoliday(),
+    calendar__day_current: isCurrent()
+  }"
+>
+  {{ day.value }}
+</div>

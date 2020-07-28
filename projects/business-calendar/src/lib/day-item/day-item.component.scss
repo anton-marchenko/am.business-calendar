@@ -1,0 +1,45 @@
+@import '../variables.scss';
+
+$day-padding-min: 16px;
+$day-padding-full: 36px;
+
+.calendar__day {
+  padding: $day-padding-min;
+  text-align: center;
+  border-right: 1px solid $color-secondary;
+  border-top: 1px solid $color-secondary;
+}
+
+.calendar__day_full-mode {
+  padding: $day-padding-full;
+}
+
+.calendar__day_work {
+  background-color: $color-work-day;
+}
+
+.calendar__day_holiday {
+  background-color: $color-holiday;
+  font-weight: bold;
+}
+
+.calendar__day_short {
+  background-color: $color-short-day;
+  font-weight: bold;
+}
+
+.calendar__day_current {
+  background-color: $color-current-day;
+  font-weight: bold;
+}
+
+.calendar__day_disable {
+  color: $disable-day-text-color;
+  background-color: $color-secondary;
+}
+
+@media (max-width: $width-desktop-min) {
+  .calendar__day_full-mode {
+    padding: $day-padding-min;
+  }
+}

@@ -1,0 +1,52 @@
+@import '../variables.scss';
+
+$half-gutter: $half-gutter;
+$cell-size: 50px;
+$month-compact-width: 380px;
+
+.calendar__month-title {
+  padding: $half-gutter;
+  box-sizing: border-box;
+  font-weight: bold;
+  text-align: center;
+}
+
+.calendar__week,
+.calendar__header {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+}
+
+.calendar__week {
+  text-align: right;
+}
+
+.calendar__header {
+  grid-auto-rows: $cell-size;
+  align-items: center;
+  text-align: center;
+}
+
+/* STYLING */
+
+.calendar {
+  background-color: $color-secondary;
+}
+
+.calendar__day-of-week {
+  font-weight: bold;
+}
+
+.calendar__day-of-week.holiday {
+  color: $color-holiday;
+}
+
+/* MODE STYLING */
+
+.calendar_compact-mode {
+  max-width: $month-compact-width;
+}
+
+.calendar_compact-mode .calendar__week {
+  grid-auto-rows: $cell-size;
+}
