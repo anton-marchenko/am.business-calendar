@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { ReactiveFormsModule } from '@angular/forms';
+import { ReactiveFormsModule, FormsModule } from '@angular/forms';
+import { NgSelectModule } from '@ng-select/ng-select';
 
 import { BusinessCalendarComponent } from './business-calendar.component';
 import { PeriodChooserComponent } from './period-chooser/period-chooser.component';
@@ -13,7 +14,9 @@ import { DayItemComponent } from './day-item/day-item.component';
   declarations: [BusinessCalendarComponent, PeriodChooserComponent, MonthItemComponent, DayItemComponent],
   imports: [
     CommonModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    FormsModule,
+    NgSelectModule
   ],
   exports: [BusinessCalendarComponent]
 })
