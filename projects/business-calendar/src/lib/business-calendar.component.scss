@@ -1,0 +1,48 @@
+@import './variables.scss';
+
+$half-gutter: $half-gutter;
+$date-select-width: 200px;
+
+.year-panel {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.date-select {
+  width: $date-select-width;
+  flex-shrink: 0;
+  margin-right: $half-gutter;
+}
+
+.spacer {
+  flex-grow: 1;
+}
+
+.nav-panel {
+  display: flex;
+  width: 100%;
+  box-sizing: border-box;
+  padding: $half-gutter 0;
+}
+
+.month-container {
+  padding: $half-gutter;
+  box-sizing: border-box;
+}
+
+.upload-panel {
+  padding: $half-gutter 0;
+}
+
+.upload-panel input[type='file'] {
+  outline: 0;
+  opacity: 0;
+  pointer-events: none;
+  user-select: none;
+  display: none;
+}
+
+.path {
+  margin-left: $half-gutter;
+}
