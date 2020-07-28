@@ -15,14 +15,14 @@ import {
   addDays,
 } from 'date-fns';
 
-import { BusinessCalendarMode } from './models/business-calendar-mode.enum';
-import { BusinessYearsStorage, BusinessYearsStorageItem } from './models/business-years-storage-model';
-import { SelectedYear, Month } from './models/selected-model';
-import { FileUploadService } from './file-upload.service';
-import { DayOfWeekNumber } from './models/day-of-week-number';
-import { DayModel } from './models/day-model';
-import { DayType } from './models/day-type';
-import { SelectItemModel } from './models/select-item.model';
+import { BusinessCalendarMode } from '../../models/business-calendar-mode.enum';
+import { BusinessYearsStorage, BusinessYearsStorageItem } from '../../models/business-years-storage-model';
+import { SelectedYear, Month } from '../../models/selected-model';
+import { FileUploadService } from '../../file-upload.service';
+import { DayOfWeekNumber } from '../../models/day-of-week-number';
+import { DayModel } from '../../models/day-model';
+import { DayType } from '../../models/day-type';
+import { SelectItemModel } from '../../models/select-item.model';
 
 // TODO move to data format service adapter
 const getDayType = day => (day.includes('*') ? DayType.Short : DayType.Holiday);

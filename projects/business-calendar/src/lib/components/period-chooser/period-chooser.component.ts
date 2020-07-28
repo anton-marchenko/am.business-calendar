@@ -1,5 +1,6 @@
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
-import { BusinessCalendarMode } from '../models/business-calendar-mode.enum';
+
+import { BusinessCalendarMode } from '../../models/business-calendar-mode.enum';
 
 @Component({
   selector: 'am-period-chooser',

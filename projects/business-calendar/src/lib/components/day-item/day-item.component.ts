@@ -1,6 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { DayType } from '../models/day-type';
-import { DayModel } from '../models/day-model';
+
+import { DayType } from '../../models/day-type';
+import { DayModel } from '../../models/day-model';
 
 @Component({
   selector: 'am-day-item',

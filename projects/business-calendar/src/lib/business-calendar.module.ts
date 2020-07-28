@@ -3,10 +3,10 @@ import { CommonModule } from '@angular/common';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { NgSelectModule } from '@ng-select/ng-select';
 
-import { BusinessCalendarComponent } from './business-calendar.component';
-import { PeriodChooserComponent } from './period-chooser/period-chooser.component';
-import { MonthItemComponent } from './month-item/month-item.component';
-import { DayItemComponent } from './day-item/day-item.component';
+import { BusinessCalendarComponent } from './components/business-calendar/business-calendar.component';
+import { PeriodChooserComponent } from './components/period-chooser/period-chooser.component';
+import { MonthItemComponent } from './components/month-item/month-item.component';
+import { DayItemComponent } from './components/day-item/day-item.component';
 
 
 
