@@ -1,1 +1,28 @@
-am-business-calendar
+<div class="nav-panel">
+    <ng-select [items]="cities"></ng-select>
+    <div class="spacer"></div>
+    <am-period-chooser (valueChange)="onPeriodChange($event)"></am-period-chooser>
+</div>
+
+<am-month-item *ngIf="!isYearMode()"
+               [monthData]="getSelectedMonth()"></am-month-item>
+
+<div class="year-panel"
+     *ngIf="isYearMode()">
+    <div *ngFor="let month of selectedYear; let monthNumber = index"
+         class="month-container">
+        <am-month-item [monthData]="month"
+                       [monthName]="getMonthName(monthNumber)"
+                       [isCompactMode]="true"></am-month-item>
+    </div>
+</div>
+
+<div class="upload-panel">
+    <label class="upload-button k-button k-primary">
+        <span class="title">Добавить файл</span>
+        <input type="file"
+               (change)="onFileUploadChange($event)"
+               accept=".csv" />
+    </label>
+    <span class="path">{{ filePath }}</span>
+</div>
